@@ -35,10 +35,17 @@ h1 {
   background-color: #36453b;
   color: white;
   padding: 10px 14px;
-  border: none;
+  border: 1px solid #36453b;
   border-radius: 15px;
   font-size: 16px;
   line-height: 1.5;
+  transition: 200ms ease-in-out;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #a5c2b0;
+  color: #36453b;
 }
 
 .quote {
@@ -48,6 +55,11 @@ h1 {
   line-height: 2;
   margin-bottom: 30px;
   margin-top: 20px;
+}
+
+.quote-sign-off {
+  font-size: 30px;
+  padding-top: 15px;
 }
 
 .permanent-marker-regular {
