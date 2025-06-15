@@ -10,11 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Motivational Quote Generator</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
       </header>
       <div class="info">
         <main>
-          <form>
+          <form id="quote-generator-form">
             <input
               type="text"
               placeholder="What area do you need motivation for today?"
@@ -33,10 +33,9 @@
             />
             <input type="submit" class="submit-button" />
           </form>
-
           <div class="quote permanent-marker-regular">
-            The quote will go here.<br />
-            Written by AI.
+            <div id="quote"></div>
+            <div id="quote-sign-off" class="quote-sign-off"></div>
           </div>
         </main>
       </div>
