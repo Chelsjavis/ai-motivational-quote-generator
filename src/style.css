@@ -1,7 +1,62 @@
+body {
+  background-color: #a5c2b0;
+}
+
+.container {
+  width: 900px;
+  margin: 40px auto;
+}
+
 h1 {
   text-align: center;
+  font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 56px;
+}
+
+.info {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #36453b;
+  margin: 20px 5px 20px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.submit-button {
+  width: 120px;
+  background-color: #36453b;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.quote {
+  border-left: 5px solid #36453b;
+  font-size: 40px;
+  padding: 0 0 40px 20px;
+  line-height: 2;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 footer {
   text-align: center;
+  font-size: 14px;
 }
