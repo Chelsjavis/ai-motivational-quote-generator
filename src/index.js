@@ -1,6 +1,6 @@
 function displayQuote(response) {
   new Typewriter("#quote", {
-    strings: `${response.data.answer} <br/> ~ Written by AI.`,
+    strings: `${response.data.answer} <div class="sign-off"> ~ Written by AI.</div>`,
     autoStart: true,
     pauseFor: 1200,
     delay: 50,
@@ -10,7 +10,6 @@ function displayQuote(response) {
 
 function generateQuote(event) {
   event.preventDefault();
-  console.log("This is working");
 
   let userInputElement = document.querySelector("#user-input");
 
@@ -19,6 +18,10 @@ function generateQuote(event) {
   let context =
     "You are an AI assistant who likes to write unique one-sentence motivational quotes about specific topics.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden");
+  quoteElement.innerHTML = `<span class="blink">Generating a quote to help motivate you...</span>`;
 
   axios.get(apiUrl).then(displayQuote);
 }
